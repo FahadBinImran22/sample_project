@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Task2Activity">
+
+    <LinearLayout
+        android:id="@+id/ChildLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/zinenic"
+            />
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:hint="Email Address"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/TextPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:hint="******"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_btn"
+            android:text="LOGIN"
+            android:textColor="#268871"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ChildLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/FacebookLogo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/FacebookText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="5dp"
+            android:text="Facebook"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/TwitterLogo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/TwitterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="10dp"
+            android:text="Twitter"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
